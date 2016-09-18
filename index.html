@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Document</title>
+
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css" type="text/css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./css/dlex.css" type="text/css">
+
+    <link rel="stylesheet" href="./css/index.css" type="text/css">
+
+    <style>
+        .in-box {
+            background: #333;
+            text-align: center;
+            color: #FFF;
+        / / height: 100 %;
+        / / padding-bottom: 1 rem;
+        }
+
+        .row {
+        / / overflow: hidden;
+            background: #CCC;
+            padding: 15px;
+        }
+
+        .col-sm-6 {
+            background: red;
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="flx-row flx-middle">
+        <div class="logo_wrap flx-col flx-auto-mr">
+            <h1>Dlek</h1>
+        </div>
+
+        <nav class="nav_wrap">
+
+            <ul class="">
+                <li><a href="">Home</a></li>
+                <li><a href="">Get Started</a></li>
+                <li><a href="">Foundation</a></li>
+                <li><a href="">Component</a></li>
+                <li><a href="">Utility</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+<div class="mv">
+    <div class="container">
+        <div class="mv_wrap flx-row flx-center">
+            <div class="mv_in">
+                <div class="title">Dlex</div>
+                <div class="discreption">Responsive CSS framework based on flexible box ( flexbox )
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<mian>
+    <section class="c-section">
+        <div class="container">
+            <div class="c-sec_title_block">
+                <h2 class="c-sec_title">初め方</h2>
+            </div>
+
+            <div class="description_block">
+                <p class="text"><a href="">こちら</a>からファイルをダウンロードして/css/dlex.cssのファイルを対象のページに設置してください。</p>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;link rel=&quot;stylesheet&quot; href=&quot;/PATH/TO/css/dlex.css&quot; /&gt;
+</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="c-section">
+        <div class="container">
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h2 class="c-sec_title">使い方</h2>
+                </div>
+                <div class="description_block c-description">
+                    <p class="text">classを当てるだけでFlexboxを簡単に使えます。<br>複数のclassを組み合わせることで様々なレイアウトが可能になります。</p>
+                </div>
+            </div>
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">横並び-基本</h3>
+                    <div class="c-description">
+                        <code>.flx-row</code>をつけるとその子要素は横並びになります。
+                    </div>
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div &gt;First&lt;/div&gt;
+    &lt;div&gt;Second&lt;/div&gt;
+    &lt;div&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="in-box">First</div>
+                        <div class="in-box">Second</div>
+                        <div class="in-box">Third</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">横並び-左右分離</h3>
+                    <div class="c-description">
+                        <code>.flx-row</code>に<code>.flx-auto-ml</code>または<code>.flx-auto-mr</code>をつけると要素の幅に合わせて左右に余白を取ります。
+                    </div>
+                </div>
+
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div class=&quot;flx-auto-mr&quot;&gt;First&lt;/div&gt;
+    &lt;div&gt;Second&lt;/div&gt;
+    &lt;div&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div &gt;First&lt;/div&gt;
+    &lt;div&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-auto-ml&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="in-box flx-auto-mr">First</div>
+                        <div class="in-box">Second</div>
+                        <div class="in-box">Third</div>
+                    </div>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="in-box">First</div>
+                        <div class="in-box">Second</div>
+                        <div class="in-box flx-auto-ml">Third</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">横並び-グリッド</h3>
+                    <div class="c-description">
+                        <code>.flx-row</code>の子要素に<code>.flx-col</code>をつけると均等の幅で配置されます。
+                    </div>
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Third&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;fourth&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;fifth&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;sixth&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="flx-col in-box">First</div>
+                        <div class="flx-col in-box">Second</div>
+                        <div class="flx-col in-box">Third</div>
+                        <div class="flx-col in-box">fourth</div>
+                        <div class="flx-col in-box">fifth</div>
+                        <div class="flx-col in-box">sixth</div>
+                    </div>
+                </div>
+
+
+                <div class="c-description">
+                    <code>.flx-col-*</code>をつけることで12分割の幅に指定できます。
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="flx-col-1 in-box">First</div>
+                        <div class="flx-col-2 in-box">Second</div>
+                        <div class="flx-col-3 in-box">Third</div>
+                    </div>
+                </div>
+
+                <div class="c-description">
+                    <code>.flx-col-offset-*</code>をつけることで横幅に12分割の余白を指定できます。
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2 flx-col-offset-4&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3 flx-col-offset-1&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="flx-col-1 in-box">First</div>
+                        <div class="flx-col-2 flx-col-offset-4 in-box">Second</div>
+                        <div class="flx-col-3 flx-col-offset-1 in-box">Third</div>
+                    </div>
+                </div>
+
+                <div class="c-description">
+                    <code>.flx-around</code>をつけることで左右の余白を均等に保ちます。
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-around&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-around">
+                        <div class="flx-col-1 in-box">First</div>
+                        <div class="flx-col-2 in-box">Second</div>
+                        <div class="flx-col-3 in-box">Third</div>
+                    </div>
+                </div>
+
+
+                <div class="c-description">
+                    <code>.flx-between</code>をつけることで横幅いっぱいに広がり両端の余白以外の余白を均等に保ちます。
+                </div>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-between&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Third&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;fourth&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-between">
+                        <div class="flx-col-1 in-box">First</div>
+                        <div class="flx-col-2 in-box">Second</div>
+                        <div class="flx-col-2 in-box">Third</div>
+                        <div class="flx-col-3 in-box">fourth</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">横並び-幅寄せ</h3>
+                    <div class="c-description">
+                        <code>.flx-start</code><code>.flx-center</code><code>.flx-end</code>つける事で幅寄せが可能です。
+                    </div>
+                </div>
+
+                <code>.flx-start</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-start&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-start">
+                        <div class="in-box flx-col-1">First</div>
+                        <div class="in-box flx-col-2">Second</div>
+                        <div class="in-box flx-col-3">Third</div>
+                    </div>
+                </div>
+
+                <code>.flx-center</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-center&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+
+
+                <div class="c-sample">
+                    <div class="flx-row flx-center">
+                        <div class="in-box flx-col-1">First</div>
+                        <div class="in-box flx-col-2">Second</div>
+                        <div class="in-box flx-col-3">Third</div>
+                    </div>
+                </div>
+
+                <code>.flx-end</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-end&quot;&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-2&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-3&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-end">
+                        <div class="in-box flx-col-1">First</div>
+                        <div class="in-box flx-col-2">Second</div>
+                        <div class="in-box flx-col-3">Third</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">横並び-縦列</h3>
+                    <div class="c-description">
+                        <code>.flx-top</code><code>.flx-middle</code><code>.flx-bottom</code>のclassをつける事で縦並びの位置の指定が可能になります。
+                    </div>
+                </div>
+
+                <code>.flx-top</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-top&quot;&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-top">
+                        <div class="in-box flx-col">First</div>
+                        <div class="in-box flx-col">Second</div>
+                        <div class="in-box flx-col op-lg">Third</div>
+                    </div>
+                </div>
+
+
+                <code>.flx-middle</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-middle&quot;&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-middle">
+                        <div class="in-box flx-col">First</div>
+                        <div class="in-box flx-col">Second</div>
+                        <div class="in-box flx-col op-lg">Third</div>
+                    </div>
+                </div>
+
+                <code>.flx-bottom</code>
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row flx-bottom&quot;&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row flx-bottom">
+                        <div class="in-box flx-col">First</div>
+                        <div class="in-box flx-col">Second</div>
+                        <div class="in-box flx-col op-lg">Third</div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">ブレイクポイント</h3>
+                    <div class="c-description">
+                        <code>.flx-*-sm</code><code><code>.flx-*-md</code></code><code>.flx-*-lg</code>でブレイクポイント毎で切り分ける事ができます。
+                        <ul class="c-list">
+                            <li><code>.flx-*-sm</code>:min-width: 767px</li>
+                            <li><code>.flx-*-md</code>:max-width: 959px</li>
+                            <li><code>.flx-*-lg</code>:min-width: 960px</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="c-code">
+<pre class="prettyprint">
+&lt;div class=&quot;flx-row&quot;&gt;
+    &lt;div class=&quot;flx-col-sm-2 flx-col-md-4 flx-col-lg-12&quot;&gt;First&lt;/div&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;Second&lt;/div&gt;
+    &lt;div class=&quot;flx-col-1&quot;&gt;Third&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                </div>
+                <div class="c-sample">
+                    <div class="flx-row">
+                        <div class="in-box flx-col-sm-2 flx-col-md-4 flx-col-lg-12">First</div>
+                        <div class="in-box flx-col-1">Second</div>
+                        <div class="in-box flx-col-1">Third</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="c-section_block">
+                <div class="c-sec_title_block">
+                    <h3 class="c-sec_title">対応ブラウザ</h3>
+                    <div class="c-description">
+                        Flexbox自体が古いIEに対応していないのでそこの対応はしていません。
+                        <ul class="c-list">
+                            <li>IE10以上</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--//.containr-->
+    </section>
+
+
+</mian>
+<footer class="footer">
+    <div class="container">
+        <div class="flx-row flx-between">
+            <div class="link"><a href="https://twitter.com/maki_saki" target="_blank"><i class="fa fa-twitter "></i>@maki_saki</a>
+            </div>
+            <div class="page_top"><a href="#top">PAGE TOP</a></div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</body>
+
+</html>
