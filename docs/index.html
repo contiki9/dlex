@@ -6,8 +6,8 @@
     <title> Document</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" type="text/css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css" type="text/css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/google/code-prettify/master/styles/desert.css" type="text/css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="./css/dlex.css" type="text/css">
 
@@ -37,7 +37,7 @@
 <body>
 
 <header class="header">
-    <div class="flx-row flx-middle">
+    <div class="flx-row flx-middle flx-between">
         <div class="logo_wrap flx-col flx-auto-mr">
             <h1>Dlek</h1>
         </div>
@@ -45,11 +45,11 @@
         <nav class="nav_wrap">
 
             <ul class="">
-                <li><a href="">Home</a></li>
-                <li><a href="">Get Started</a></li>
-                <li><a href="">Foundation</a></li>
-                <li><a href="">Component</a></li>
-                <li><a href="">Utility</a></li>
+                <li><a href="#top">Home</a></li>
+                <li><a href="#start">初め方</a></li>
+                <li><a href="#used">使い方</a></li>
+                <li><a href="#brk">プレイクポイント</a></li>
+                <li><a href="#browser">対応ブラウザ</a></li>
             </ul>
         </nav>
 
@@ -73,7 +73,7 @@
     <section class="c-section">
         <div class="container">
             <div class="c-sec_title_block">
-                <h2 class="c-sec_title">初め方</h2>
+                <h2 id="start" class="c-sec_title">初め方</h2>
             </div>
 
             <div class="description_block">
@@ -91,7 +91,7 @@
         <div class="container">
             <div class="c-section_block">
                 <div class="c-sec_title_block">
-                    <h2 class="c-sec_title">使い方</h2>
+                    <h2 id="used" class="c-sec_title">使い方</h2>
                 </div>
                 <div class="description_block c-description">
                     <p class="text">classを当てるだけでFlexboxを簡単に使えます。<br>複数のclassを組み合わせることで様々なレイアウトが可能になります。</p>
@@ -414,7 +414,7 @@
 
             <div class="c-section_block">
                 <div class="c-sec_title_block">
-                    <h3 class="c-sec_title">ブレイクポイント</h3>
+                    <h2 id="brk" class="c-sec_title">ブレイクポイント</h2>
                     <div class="c-description">
                         <code>.flx-*-sm</code><code><code>.flx-*-md</code></code><code>.flx-*-lg</code>でブレイクポイント毎で切り分ける事ができます。
                         <ul class="c-list">
@@ -445,7 +445,7 @@
 
             <div class="c-section_block">
                 <div class="c-sec_title_block">
-                    <h3 class="c-sec_title">対応ブラウザ</h3>
+                    <h2 id="browser" class="c-sec_title">対応ブラウザ</h2>
                     <div class="c-description">
                         Flexbox自体が古いIEに対応していないのでそこの対応はしていません。
                         <ul class="c-list">
