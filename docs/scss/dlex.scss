@@ -1,8 +1,8 @@
 
 //BrakePoint
 //////////////////////////////
-$brk_sp:767px;
-$brk_tb:959px;
+$brk_sp:480px;
+$brk_tb:767px;
 $brk_pc:960px;
 
 
@@ -500,7 +500,7 @@ $brk_pc:960px;
   }
 }
 
-@media only screen and (max-width: $brk_tb) {
+@media only screen and (min-width: $brk_tb) {
   .flx-col-md,
   .flx-col-md-1,
   .flx-col-md-2,
