@@ -35,7 +35,6 @@ pre.prettyprint {
     line-height: 1;
     margin-bottom: 0; }
   .header .nav_wrap {
-    padding-right: 2rem;
     padding-right: 2rem; }
     .header .nav_wrap ul {
       display: inline;
@@ -58,6 +57,10 @@ pre.prettyprint {
 .c-sec_title_block {
   margin-top: 40px;
   margin-bottom: 40px; }
+
+.c-sec_title {
+  margin-top: -80px;
+  padding-top: 80px; }
 
 .c-list {
   margin-top: 20px;

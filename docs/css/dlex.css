@@ -233,19 +233,19 @@
   justify-content: space-around;
 }
 
-.flx-between-xs {
+.flx-between {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
-.flx-first-xs {
+.flx-first {
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
 }
 
-.flx-last-xs {
+.flx-last {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
