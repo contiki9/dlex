@@ -1,0 +1,25 @@
+{
+  "name": "dlex",
+  "version": "1.0.0",
+  "description": "flexbox css framework",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/contiki9/dlex.git"
+  },
+  "keywords": [
+    "flexbox"
+  ],
+  "author": "conti",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/contiki9/dlex/issues"
+  },
+  "homepage": "https://github.com/contiki9/dlex#readme"
+}
