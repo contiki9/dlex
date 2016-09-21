@@ -5,7 +5,6 @@
   "main": "css/dlex.css",
   "style": "css/dlex.css",
   "files": [
-    "LICENSE.md",
     "css/dlex.css"
   ],
   "directories": {
