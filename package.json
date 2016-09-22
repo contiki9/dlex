@@ -2,7 +2,11 @@
   "name": "dlex",
   "version": "1.0.0",
   "description": "flexbox css framework",
-  "main": "index.js",
+  "main": "css/dlex.css",
+  "style": "css/dlex.css",
+  "files": [
+    "css/dlex.css"
+  ],
   "directories": {
     "doc": "docs"
   },
