@@ -1,0 +1,10 @@
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+*.cfg
+*.map
+**/mixin.css
+out
+gen
